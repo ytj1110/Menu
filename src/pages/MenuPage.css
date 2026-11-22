@@ -1,0 +1,18 @@
+.menu { padding-top: 0; }
+.menu__toolbar { position: sticky; top: var(--header-h); z-index: 20; background: var(--cream); border-bottom: 1px solid var(--cream-deep); }
+.menu__toolbar-inner { display: grid; gap: 4px; padding-top: 14px; }
+.menu__search { position: relative; display: flex; align-items: center; max-width: 520px; }
+.menu__search > svg { position: absolute; left: 16px; width: 20px; height: 20px; color: var(--ink-muted); pointer-events: none; }
+.menu__search input {
+  width: 100%; min-height: 48px; padding: 0 48px; border-radius: 999px; border: 2px solid var(--cream-deep);
+  background: #fffaf1; color: var(--charcoal); font: 1rem var(--font-body);
+}
+.menu__search input:focus-visible { border-color: var(--accent); outline-offset: 0; }
+.menu__search button {
+  position: absolute; right: 4px; width: 40px; height: 40px; display: grid; place-items: center;
+  border: 0; border-radius: 50%; background: none; cursor: pointer; color: var(--ink-muted);
+}
+.menu__search button svg { width: 18px; height: 18px; }
+.menu__content { padding-block: 20px 8px; }
+.menu__count { margin-bottom: 16px; color: var(--ink-muted); font-size: .9rem; }
+@media (min-width: 900px) { .menu__toolbar-inner { grid-template-columns: 340px 1fr; align-items: center; gap: 24px; padding-bottom: 6px; } }

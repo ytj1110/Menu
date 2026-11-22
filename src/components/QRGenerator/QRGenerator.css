@@ -1,0 +1,13 @@
+.qr { min-height: 100dvh; display: grid; gap: 24px; padding: 24px 20px; background: var(--charcoal); color: var(--cream); align-content: start; justify-items: center; }
+.qr__panel { width: 100%; max-width: 460px; display: grid; gap: 10px; align-content: start; }
+.qr__back { display: inline-flex; align-items: center; gap: 6px; width: fit-content; padding-block: 8px; text-underline-offset: 3px; }
+.qr__title { font-size: 2.2rem; }
+.qr__intro { color: rgba(246, 239, 227, .75); margin-bottom: 8px; }
+.qr__label { font-weight: 600; margin-top: 8px; }
+.qr__input { min-height: 48px; padding: 0 14px; border-radius: 10px; border: 2px solid rgba(246, 239, 227, .3); background: var(--charcoal-soft); color: var(--cream); font: inherit; }
+.qr__error { color: #ffb4a2; }
+.qr__download { margin-top: 12px; }
+.qr__download svg { width: 18px; height: 18px; }
+.qr__preview { background: #fff; padding: 16px; border-radius: var(--radius); width: min(100%, 360px); }
+.qr__preview canvas { width: 100% !important; height: auto !important; display: block; }
+@media (min-width: 860px) { .qr { grid-template-columns: 460px 360px; justify-content: center; padding-top: 64px; gap: 56px; } }

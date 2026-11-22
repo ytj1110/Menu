@@ -1,0 +1,16 @@
+.header {
+  position: sticky; top: 0; z-index: 30; height: var(--header-h);
+  background: var(--charcoal); color: var(--cream);
+  border-bottom: 1px solid rgba(246, 239, 227, .12);
+}
+.header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.header__brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
+.header__logo { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.header__logo--text {
+  display: grid; place-items: center; background: var(--accent); color: var(--charcoal);
+  font: 1.25rem var(--font-display);
+}
+.header__name { font: 1.25rem var(--font-display); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header__cta { min-height: 40px; padding: 0 16px; }
+.header__cta svg { width: 18px; height: 18px; }
+@media (max-width: 380px) { .header__cta span { display: none; } .header__cta { padding: 0 12px; } }
